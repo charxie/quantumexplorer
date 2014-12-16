@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://www.concord.org/~qxie/quantum" href="http://www.concord.org/~qxie/quantum/qw.jnlp">
+   <information>
+      <title>Quantum Workbench</title>
+      <vendor>Concord Consortium, Inc.</vendor>
+      <homepage href="index.html"/>
+      <description>The Quantum Workbench</description>
+      <icon href="icon.png"/>
+      <icon kind="splash" href="splash.png"/> 
+      <offline-allowed/>
+      <shortcut online="true">
+         <desktop/>
+         <menu/>
+      </shortcut>
+      <association extensions="qwb" mime-type="application/Quantum Workbench"/>
+   </information>
+   <resources>
+      <j2se version="1.7+"/>
+      <jar href="qw.jar"/>
+      <property name="apple.awt.brushMetalLook" value="true"/>
+      <property name="apple.laf.useScreenMenuBar" value="true"/>
+   </resources>
+   <security>
+      <all-permissions/>
+   </security>
+   <application-desc main-class="org.concord.qm2d.QuantumBox"/>
+</jnlp>

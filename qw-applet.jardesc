@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/qxie/Desktop/web/quantum/qw-applet.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/qw/qw-applet.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=qw/src&lt;org.concord.qm2d{QuantumBox.java[QuantumBox" manifestLocation="/qw/manifest-applet" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/qw/.classpath"/>
+        <file path="/qw/.project"/>
+        <javaElement handleIdentifier="=qw/src"/>
+    </selectedElements>
+</jardesc>

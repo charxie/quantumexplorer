@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+<engine>
+<itp>false</itp>
+<nx>200</nx>
+<ny>200</ny>
+<timestep>1.0</timestep>
+</engine>
+<state>
+<xmin>-20.0</xmin>
+<xmax>10.0</xmax>
+<ymin>-10.0</ymin>
+<ymax>10.0</ymax>
+<absorbing_boundary direction="x" length_percentage="0.1" absorption="0.01"/>
+<absorbing_boundary direction="y" length_percentage="0.1" absorption="0.01"/>
+<frank>true</frank>
+<ruler>false</ruler>
+<grid>false</grid>
+<contour>false</contour>
+<probonly>false</probonly>
+<dotmode>true</dotmode>
+<dotcellsize>0.16107382</dotcellsize>
+<drawenergy>false</drawenergy>
+<drawcurrent>false</drawcurrent>
+<energyscale>5.0</energyscale>
+<intensityscale>5.0</intensityscale>
+<drawexpectation>false</drawexpectation>
+<probcolor>99ff</probcolor>
+<particle mass="1.0"/>
+<potentials>
+<rectangular energy="10.0" xcenter="0.0" ycenter="-6.0" width="1.0" height="6.0"/>
+<rectangular energy="10.0" xcenter="0.0" ycenter="6.0" width="1.0" height="6.0"/>
+<rectangular energy="10.0" xcenter="0.0" ycenter="0.0" width="1.0" height="4.0"/>
+<rectangular energy="10.0" xcenter="-10.0" ycenter="-6.0" width="1.0" height="10.0"/>
+<rectangular energy="10.0" xcenter="-10.0" ycenter="6.0" width="1.0" height="10.0"/>
+</potentials>
+<wavepackets>
+<uniform_rectangle magnitude="1.0" x="-17.0" y="-8.0" width="2.0" height="16.0" px="2.0" py="0.0"/>
+</wavepackets>
+<sources>
+<planewave period="10.0" amplitude="0.5" xcenter="-18.0" ycenter="0.0" width="1.0" height="8.0" px="0.0" py="0.0"/>
+</sources>
+</state></model>

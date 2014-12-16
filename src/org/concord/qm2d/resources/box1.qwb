@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+<engine>
+<itp>false</itp>
+<nx>200</nx>
+<ny>200</ny>
+<timestep>0.5</timestep>
+</engine>
+<state>
+<xmin>-10.0</xmin>
+<xmax>10.0</xmax>
+<ymin>-10.0</ymin>
+<ymax>10.0</ymax>
+<frank>true</frank>
+<ruler>false</ruler>
+<grid>false</grid>
+<contour>false</contour>
+<probonly>false</probonly>
+<dotmode>false</dotmode>
+<dotcellsize>0.2020202</dotcellsize>
+<drawenergy>false</drawenergy>
+<drawcurrent>false</drawcurrent>
+<energyscale>5.0</energyscale>
+<intensityscale>10.0</intensityscale>
+<drawexpectation>false</drawexpectation>
+<probcolor>99ff</probcolor>
+<particle mass="0.548758"/>
+<wavepackets>
+<gaussian magnitude="1.0" sigma="2.0" xcenter="0.0" ycenter="0.0" px="0.0" py="0.0"/>
+</wavepackets>
+</state></model>
