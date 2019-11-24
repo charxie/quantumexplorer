@@ -66,7 +66,6 @@ public final class MiscUtil {
 	}
 
 	public static void drawFrank(Graphics g, int x, int y) {
-		if(x>0) return;
 		g.setColor(Color.gray);
 		String s = QuantumBox.BRAND_NAME;
 		g.drawString(s, x + 1, y - 1);
