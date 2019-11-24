@@ -14,15 +14,6 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="module-library">
-      <library name="lapack.jar">
-        <CLASSES>
-          <root url="file://lapack.jar" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="lapack" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="lapack">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lapack.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
