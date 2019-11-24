@@ -1,10 +1,6 @@
 package org.concord.qm2d;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.EventQueue;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -74,7 +70,7 @@ public class QuantumBox extends JApplet implements MwService, VisualizationListe
 
 	private static final long serialVersionUID = 1L;
 
-	final static String BRAND_NAME = "Quantum Workbench";
+	public final static String BRAND_NAME = "Quantum Leap";
 
 	static byte logLevel = 0;
 
@@ -771,6 +767,10 @@ public class QuantumBox extends JApplet implements MwService, VisualizationListe
 		MenuBar menuBar = (MenuBar) box.owner.getJMenuBar();
 		preferences.put("Latest QWB Path", menuBar.getLatestPath("qwb"));
 		preferences.put("Latest HTM Path", menuBar.getLatestPath("htm"));
+		preferences.put("Latest IMG Path", menuBar.getLatestPath("img"));
+		Rectangle bounds = box.owner.getBounds();
+		preferences.putInt("Upper-left x", bounds.x);
+		preferences.putInt("Upper-left y", bounds.y);
 		String[] recentFiles = menuBar.getRecentFiles();
 		if (recentFiles != null) {
 			int n = recentFiles.length;
@@ -809,7 +809,11 @@ public class QuantumBox extends JApplet implements MwService, VisualizationListe
 		box.addIOListener(toolBar);
 		box.getView().addManipulationListener(toolBar);
 		frame.getContentPane().add(toolBar, BorderLayout.NORTH);
-		frame.setLocation(100, 100);
+		Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+		int w = (int) (screen.height * 0.7);
+		int x = preferences.getInt("Upper-left x", (screen.height - w) / 8);
+		int y = preferences.getInt("Upper-left y", (screen.height - w) / 8);
+		frame.setLocation(x, y);
 		frame.setTitle(BRAND_NAME);
 		frame.pack();
 		frame.setVisible(true);

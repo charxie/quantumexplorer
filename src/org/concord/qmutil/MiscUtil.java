@@ -1,5 +1,7 @@
 package org.concord.qmutil;
 
+import org.concord.qm2d.QuantumBox;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -64,9 +66,9 @@ public final class MiscUtil {
 	}
 
 	public static void drawFrank(Graphics g, int x, int y) {
-		g.setFont(new Font("Arial", Font.BOLD, 12));
+		if(x>0) return;
 		g.setColor(Color.gray);
-		String s = "Quantum Workbench";
+		String s = QuantumBox.BRAND_NAME;
 		g.drawString(s, x + 1, y - 1);
 		g.drawString(s, x + 1, y + 1);
 		g.drawString(s, x - 1, y - 1);

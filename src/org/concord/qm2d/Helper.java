@@ -38,14 +38,10 @@ public class Helper {
 	}
 
 	public final static void showAbout(Frame frame) {
-		String s = "<html><h2>Quantum Workbench</h2>";
-		s += "<h4><i>Interactive quantum mechanics simulation</i></h4>";
-		s += "http://www.concord.org/~qxie/quantum<br>The Concord Consortium, 2011-2014";
+		String s = "<html><h2>Quantum Leap</h2>";
+		s += "<h4><i>An interactive quantum simulation and design environment</i></h4>";
 		s += "<hr>";
-		s += "<h4>Credit:</h4>This program is created by Dr. Charles Xie (charxie@gmail.com).<br>";
-		s += "Funding of this project is provided by the National Science Foundation<br>";
-		s += "under grant #0802532.";
-		s += "<h4>License:</h4>GNU General Public License V3.0";
+		s += "<h4>Credit:</h4>This program is being developed by Dr. Charles Xie based on prior work funded<br>by the U.S. National Science Foundation.<br>";
 		s += "</html>";
 		JOptionPane.showMessageDialog(frame, new JLabel(s));
 	}

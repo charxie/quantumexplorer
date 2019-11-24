@@ -64,7 +64,7 @@ class MenuBar extends JMenuBar {
 
 		@Override
 		public String getDescription() {
-			return "Quantum Workbench";
+			return "Quantum Leap";
 		}
 
 	};
