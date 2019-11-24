@@ -12,11 +12,7 @@ import java.io.OutputStream;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import javax.swing.JApplet;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
+import javax.swing.*;
 
 import org.concord.modeler.MwService;
 import org.concord.qmevent.VisualizationEvent;
@@ -89,10 +85,10 @@ public class MainWindow extends JApplet implements MwService, VisualizationListe
 
 	private void addDynamicView() {
 		dynamicsView = new DynamicsView();
-		dynamicsView.setBackground(Color.white);
-		dynamicsView.setForeground(Color.black);
+		dynamicsView.setBackground(Color.WHITE);
+		dynamicsView.setForeground(Color.BLACK);
 		add(dynamicsView, BorderLayout.CENTER);
-		dynamicsView.setPreferredSize(new Dimension(600, 400));
+		dynamicsView.setPreferredSize(new Dimension(600, 600));
 		JPanel p = new JPanel();
 		add(p, BorderLayout.SOUTH);
 		final JButton buttonRun = new JButton("Run");
@@ -191,7 +187,7 @@ public class MainWindow extends JApplet implements MwService, VisualizationListe
 			} catch (Exception e) {
 				s = null;
 			}
-			setPotential(s == null ? Scripter1D.SQUARE_WELL : s);
+			setPotential(s == null ? Scripter1D.HARMONIC_OSCILLATOR : s);
 			try {
 				s = getParameter("init_state");
 			} catch (Exception e) {
@@ -398,6 +394,8 @@ public class MainWindow extends JApplet implements MwService, VisualizationListe
 	public static void main(String[] args) {
 		final JFrame frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JMenuBar menuBar = new JMenuBar();
+		frame.setJMenuBar(menuBar);
 		MainWindow mw = new MainWindow();
 		logLevel = 1;
 		mw.init();
