@@ -1,4 +1,4 @@
-quantumworkbench
+Quantum Leap
 ================
 
-Interactive quantum dynamics for everyone
+Interactive quantum simulation and design for everyone
