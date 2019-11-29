@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Permissions: all-permissions
-Main-Class: org.concord.qm2d.QuantumBox
+Main-Class: quantum.qm2d.QuantumBox
 Application-Name: Quantum Workbench
 

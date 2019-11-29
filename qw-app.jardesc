@@ -4,7 +4,7 @@
     <options buildIfNeeded="true" compress="true" descriptionLocation="/qw/qw-app.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
     <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
     <selectedProjects/>
-    <manifest generateManifest="false" mainClassHandleIdentifier="=qw/src&lt;org.concord.qm2d{QuantumBox.java[QuantumBox" manifestLocation="/qw/manifest-app" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+    <manifest generateManifest="false" mainClassHandleIdentifier="=qw/src&lt;quantum.qm2d{QuantumBox.java[QuantumBox" manifestLocation="/qw/manifest-app" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
         <sealing sealJar="false">
             <packagesToSeal/>
             <packagesToUnSeal/>

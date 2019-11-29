@@ -23,5 +23,5 @@
    <security>
       <all-permissions/>
    </security>
-   <application-desc main-class="org.concord.qm2d.QuantumBox"/>
+   <application-desc main-class="quantum.qm2d.QuantumBox"/>
 </jnlp>
