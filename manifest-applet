@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Permissions: sandbox
-Main-Class: quantum.qm2d.QuantumBox
-Application-Name: Quantum Workbench
-Caller-Allowable-Codebase: *
-
