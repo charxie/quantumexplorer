@@ -69,7 +69,7 @@ public class QuantumBox extends JApplet implements VisualizationListener {
 
 	private static final long serialVersionUID = 1L;
 
-	public final static String BRAND_NAME = "Quantum Leap";
+	public final static String BRAND_NAME = "Quantum Modeler";
 
 	static byte logLevel = 0;
 
