@@ -1,4 +1,4 @@
-Quantum Leap
-================
+The Quantum Modeler
+===================
 
-Interactive quantum simulation and design for everyone
+Quantum simulation and design software for research and education in quantum computing and nanotechnology
